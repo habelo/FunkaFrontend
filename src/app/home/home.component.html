@@ -1,0 +1,53 @@
+<div class="color-dark">
+  <nav>
+    <ul class="navbar">
+      <li><a>Vädret</a></li>
+      <li><a>Solen</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="color-dark container">
+  <div class="col"></div>
+  <article class="col">
+    <header><h2>Välj vart du är för att se Solyoga chanserna</h2></header>
+
+      <form class="col">
+        <input type="text" class="txt" name="place" placeholder="Latitude" [(ngModel)]="latitude">
+        <input type="text" class="txt" name="place" placeholder="Longitude" [(ngModel)]="longitude">
+        <input type="button" class="btn" [value]="btnText" (click)="getData()">
+      </form>
+      <div class="col">
+        <p>Du söker för Latitude: {{ latitude }}</p>
+        <p>Du söker för Longitude: {{ longitude }}</p>
+      </div>
+  </article>
+  <aside class="col">
+      <ul class="city-list">
+        <li>Stockholm:</li>
+        <li>long: 59.33</li>
+        <li>lat: 18.06</li>
+      </ul>
+  
+    </aside>
+ <div class="col"></div>
+</div>
+
+<div class="color-third">
+  <table>
+    <thead class="col">
+      <tr>
+        <th>Soluppgång</th>
+        <th>Mittenstånd</th>
+        <th>Solnedgång</th>
+      </tr>
+    </thead>
+    <tbody class="col">
+      <tr *ngFor="let sun of data">
+        <td>{{ sun.results.sunrise }}</td>
+        <td>{{ sun.results.solar_noon }}</td>
+        <td>{{ sun.results.sunset }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
