@@ -1,3 +1,75 @@
+
+@media only screen and (max-width: 499px){
+
+    .city-list{
+        margin-right: 5px;
+        padding: 0;
+    }
+
+
+.container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+.col {
+    padding:0;
+}
+
+.city-list > li{
+    list-style-type: none;
+}
+.city-list > ul > :first-child{
+    font-weight: bold;
+}
+
+.color-dark {
+    background: #4d3900;
+    color: #ffe499;
+}
+
+.color-light {
+    background: #b38300;
+}
+
+.color-third {
+    background: #b3b300;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0 0 2em 0;
+}
+
+.navbar > li {
+    display: inline;
+    padding: 0 2em 0 0;
+}
+
+.navbar > li > a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+input.txt {
+    border: 0;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+input.btn {
+    border: 0;
+    padding: 0.5em;
+    
+    background: #b3b300;
+    font-weight: bold;
+    cursor: pointer;
+}
+}
+
+
+
+
 .container {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
@@ -56,3 +128,4 @@ input.btn {
     font-weight: bold;
     cursor: pointer;
 }
+
