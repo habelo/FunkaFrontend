@@ -18,8 +18,6 @@ export class HomeComponent implements OnInit {
   ROOT_URL: string;
   latitude: string = '';
   longitude: string = '';
-//36.7201600
-//-4.4203400
   constructor(private _http: HttpClient) { 
   }
 
